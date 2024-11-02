@@ -77,8 +77,8 @@ class HabitDatabase extends ChangeNotifier {
               date.month == DateTime.now().month &&
               date.day == DateTime.now().day);
         }
+        await isar.habits.put(habit);
       });
-      await isar.habits.put(habit);
     }
     readHabits();
   }
