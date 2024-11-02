@@ -168,10 +168,10 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildHabitList() {
     // habit db
-    final havitDatabase = context.watch<HabitDatabase>();
+    final habitDatabase = context.watch<HabitDatabase>();
 
     // current habits
-    List<Habit> currentHabits = havitDatabase.currentHabits;
+    List<Habit> currentHabits = habitDatabase.currentHabits;
 
     return ListView.builder(
       itemCount: currentHabits.length,

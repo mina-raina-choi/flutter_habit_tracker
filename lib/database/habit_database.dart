@@ -17,7 +17,7 @@ class HabitDatabase extends ChangeNotifier {
   }
 
   // Save first date of app startup (for heatmap)
-  Future<void> saveFirstLauchDate() async {
+  Future<void> saveFirstLaunchDate() async {
     var firstLaunchDate = await isar.appSetttings.where().findFirst();
     if (firstLaunchDate == null) {
       // .. Cascades (.., ?..) allow you to make a sequence of operations on the same object. In addition to accessing instance members, you can also call instance methods on that same object
