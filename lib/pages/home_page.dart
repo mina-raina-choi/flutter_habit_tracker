@@ -156,7 +156,6 @@ class _HomePageState extends State<HomePage> {
         // once the data is available -> heat map
         if (snapshot.hasData) {
           return MyHeatmap(
-            startDate: snapshot.data!,
             datasets: prepareHeatMapDatasets(currentHabits),
           );
         } else {
